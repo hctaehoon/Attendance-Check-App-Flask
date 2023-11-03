@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <title>의회 출석</title>
+</head>
+<body>
+  <h1 id="time"></h1>
+  <table>
+    <thead>
+      <tr>
+        <th>이름</th>
+        <th>핸드폰 번호</th>
+        <th>출석 여부</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="tel:01047539003">송미희</a></td>
+        <td>010-4753-9003</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01089185852">성훈창</a></td>
+        <td>010-8919-5852</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01037068683">박소영</a></td>
+        <td>010-3706-8683</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01053322685">박춘호</a></td>
+        <td>010-5332-2685</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01044948288">김선옥</a></td>
+        <td>010-4494-8288</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01053215001">안돈의</a></td>
+        <td>010-5321-5001</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01052177317">오인열</a></td>
+        <td>010-5217-7317</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01091738665">김찬심</a></td>
+        <td>010-9173-8665</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01089769489">서명범</a></td>
+        <td>010-8976-9489</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01053895710">이봉관</a></td>
+        <td>010-5389-5710</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01082285030">윤석경</a></td>
+        <td>010-8228-5030</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01027724485">이건섭</a></td>
+        <td>010-2772-4485</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01099351963">김진영</a></td>
+        <td>010-9935-1963</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01034334704">이상훈</a></td>
+        <td>010-3433-4704</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01092851035">한지숙</a></td>
+        <td>010-9285-1035</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td><a href="tel:01045213536">김수연</a></td>
+        <td>010-4521-3536</td>
+        <td><input type="checkbox"></td>
+      </tr>
+    </tbody>
+  </table>
+  <button id="save-btn">출석 완료</button>
+
+
+  
+</body>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</html>

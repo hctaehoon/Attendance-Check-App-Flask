@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+table {
+  width: 80%;
+  margin: 50px auto;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+#save-btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+input[type="checkbox"] {
+  width: 25px; /* 체크박스의 너비를 조절합니다. */
+  height: 25px; /* 체크박스의 높이를 조절합니다. */
+}
