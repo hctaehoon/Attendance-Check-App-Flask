@@ -53,3 +53,7 @@ input[type="checkbox"] {
   width: 25px; /* 체크박스의 너비를 조절합니다. */
   height: 25px; /* 체크박스의 높이를 조절합니다. */
 }
+button {
+  font-size: 20px; /* 글자 크기 조절 */
+  padding: 10px 20px; /* 패딩으로 버튼 크기 조절 */
+}

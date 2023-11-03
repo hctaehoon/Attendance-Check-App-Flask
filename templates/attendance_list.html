@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>출석 목록</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <body>
+        <h1>출석 목록</h1>
+        <h2>{{ today }} 출석자 목록</h2>
+
+        <table>
+            <tr>
+                <th>이름</th>
+                <th>출석 날짜</th>
+            </tr>
+            {% for attendance in attendances %}
+            <tr>
+                <td>{{ attendance.name }}</td>
+                <td>{{ attendance.date.strftime('%y.%m.%d') }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        
+        <h1>월별 출석 현황</h1>
+        <form action="{{ url_for('attendance_list') }}" method="GET">
+            <label for="month">월 선택:</label>
+            <input type="month" id="month" name="month" value="{{ month }}">
+            <input type="submit" value="확인">
+        </form>
+        <table>
+            <tr>
+                <th>이름</th>
+                <th>출석 수</th>
+            </tr>
+            {% for name, count in monthly_counts.items() %}
+            <tr>
+                <td>{{ name }}</td>
+                <td>{{ count }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <button onclick="location.href='/'">돌아가기</button>
+    </body>
+</html>
